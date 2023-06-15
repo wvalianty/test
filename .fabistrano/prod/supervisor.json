@@ -1,0 +1,9 @@
+{
+    "example": {
+        "template": "program",
+        "settings": {
+            "command": "/bin/cat"
+        },
+        "tag": "service"
+    }
+}
