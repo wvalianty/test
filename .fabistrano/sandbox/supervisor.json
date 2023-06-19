@@ -10,19 +10,22 @@
         "template": "program",
         "settings": {
             "command": "python3.7 manage.py notification -t email -i 5"
-        }
+        },
+        "tag": "service"
     },
     "notification-slack": {
         "template": "program",
         "settings": {
             "command": "python3.7 manage.py notification -t slack -i 30"
-        }
+        },
+        "tag": "service"
     },
     "workflow-ingress": {
         "template": "program",
         "settings": {
             "command": "python3.7 manage.py workflow_ingress -i 5"
-        }
+        },
+        "tag": "service"
     }
 }
 
