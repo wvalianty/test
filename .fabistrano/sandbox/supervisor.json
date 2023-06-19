@@ -1,0 +1,28 @@
+{
+    "channel": {
+        "template": "fcgi-program",
+        "settings": {
+            "command": "daphne -u /tmp/daphne%(process_num)d.sock --fd 0 --access-log - aladdin.asgi:application"
+        },
+        "tag": "channel"
+    },
+    "notification-email": {
+        "template": "program",
+        "settings": {
+            "command": "python3.7 manage.py notification -t email -i 5"
+        }
+    },
+    "notification-slack": {
+        "template": "program",
+        "settings": {
+            "command": "python3.7 manage.py notification -t slack -i 30"
+        }
+    },
+    "workflow-ingress": {
+        "template": "program",
+        "settings": {
+            "command": "python3.7 manage.py workflow_ingress -i 5"
+        }
+    }
+}
+
