@@ -4,6 +4,7 @@ listView('testlist1') {
   filterExecutors()
   jobs {
     name('print_credential')
+    name('greetingJob3')
 
   }
     columns {
