@@ -1,5 +1,5 @@
 pipelineJob('aladdin_backend_py310_sandbox_test') {
-    options {
+    properties {
         disableConcurrentBuilds()
     }
     parameters {
