@@ -1,15 +1,15 @@
 pipelineJob('aladdin_backend_py310_sandbox_test') {
-    definition {
-           cps {
-             script('''
-pipeline {
-    agent any
     options {
         disableConcurrentBuilds()
     }
     parameters {
         stringParam('TAG', '', '')
     }
+    definition {
+           cps {
+             script('''
+pipeline {
+    agent any
     environment {
         REPO="git@1:aladdin_backend.git"
         DEPLOYMENT_REPO="git@1:aladdin_backend.git"
